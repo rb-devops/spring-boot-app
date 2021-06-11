@@ -23,7 +23,7 @@ Create a Jenkins job using Declarative Pipelines
 		https://docs.aws.amazon.com/eks/latest/userguide/sample-deployment.html
 
         - Provide logic to automatically deploy the image if its
-            one of the following branches: development, staging, or uat.   $BRANCH_NAME --> ENV   BRANCH_NAME = $(git rev-parse --abbrev-ref HEAD)   
+            one of the following branches: development, staging, or uat.
             AND tagged with the git sha ( as opposed to a git tag )
    
 	-->  Assume there is a k8s deployment.yaml file included in the application repository.
